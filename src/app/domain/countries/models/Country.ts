@@ -7,6 +7,11 @@ export interface Country {
   languages: Language[];
 }
 
+export interface CountrySearchResult {
+  countries: Country[];
+  error?: string;
+}
+
 export interface Currency {
   code: string;
   name: string;
@@ -17,3 +22,5 @@ export interface Language {
   iso639_1: string;
   name: string;
 }
+
+
